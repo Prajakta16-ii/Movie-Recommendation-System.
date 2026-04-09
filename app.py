@@ -34,7 +34,7 @@ selected_movie = st.selectbox(
     movie_list
 )
 
-if st.button('Show Recommendation'):
+if st.button('Show movie Recommendation'):
     recommended_movie_names,recommended_movie_posters = recommend(selected_movie)
     col1, col2, col3, col4, col5 = st.beta_columns(5)
     with col1:
